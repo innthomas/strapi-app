@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
+import MyCards from './components/MyCards';
+import XterCards from './components/XterCards';
 import reportWebVitals from './reportWebVitals';
+import characterImages from "./imageData/charactersData";
+import planetImages from "./imageData/planetsData";
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+     <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<App />}/>
+      <Route path="planets" element={<MyCards planetImages={planetImages} characterImages={characterImages} />} />
+      <Route path="characters" element={<XterCards  characterImages={characterImages}/>} />
+    </Routes>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

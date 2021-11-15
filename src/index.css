@@ -1,13 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pt-4.navbar-brand{
+  font-family: Poppins, sans-serif;
+  font-size: 2.55rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: .1rem;
+  margin-left: 1rem;
 }
+
+button.btn.btn-light{
+  font-family: Poppins, sans-serif;
+  margin-left: 3.5rem;
+  /* background-color: #fff; */
+  /* border: 1px solid #fff; */
+  color: rgb(128, 117, 117);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: .1rem;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+}
+
+div.card{
+border-radius: 1.5rem;
+box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+transition: all .55s ease-in-out;
+}
+
+img.mx-auto.d-block.mb-0.rounded-circle{
+  margin-bottom: 0%;
+}
+.mycard.m-1.w-300.h-150 :hover{
+  border: 2px solid black;
+
+}
+
+button.btn.btn-circle{
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 6px 0px;
+  margin:1rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.42857;
+  background-color:rgb(22, 9, 53);
+  
+}
+ 

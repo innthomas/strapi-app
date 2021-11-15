@@ -32,7 +32,7 @@ const MyCards = ({planetImages,characterImages}) => {
     <Row> 
       {planetImages.map((planet) => (
         <Col className="col-sm-6 col-md-4 col-lg-3">
-        <Card className="m-1 w-300 h-150"  onClick={handleShow} 
+        <Card className="m-1 w-300 h-150 mycard"  onClick={handleShow} 
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <Image key={planet.id} src= {planet.src} alt={planet.alt} roundedCircle className="mx-auto d-block mb-0"/>
           <Card.Body className="mt-0 pt-0">
