@@ -7,8 +7,8 @@ import App from './App';
 import MyCards from './components/MyCards';
 import XterCards from './components/XterCards';
 import reportWebVitals from './reportWebVitals';
-import characterImages from "./imageData/charactersData";
-import planetImages from "./imageData/planetsData";
+import characterImages from "../src/imageData/charactersData";
+import planetImages from "../src/imageData/planetsData";
 
 
 ReactDOM.render(
